@@ -1,13 +1,12 @@
 {
   "name": "file-metadata",
-  "version": "0.0.1",
-  "description": "File Metadata Microservice for Free Code Camp",
+  "version": "0.1.0",
+  "description": "File Metadata Microservice for freeCodeCamp",
   "main": "server.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "mocha test",
     "start": "node server.js"
   },
   "repository": {
@@ -15,20 +14,24 @@
     "url": "git+https://github.com/zsoltime/file-metadata.git"
   },
   "author": "Zsolt Meszaros",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/zsoltime/file-metadata/issues"
   },
   "homepage": "https://github.com/zsoltime/file-metadata#readme",
   "engines": {
-    "node": "6.9.1"
+    "node": "6.11.1"
   },
   "dependencies": {
-    "express": "^4.14.0",
-    "jade": "^1.11.0",
+    "cors": "^2.8.1",
+    "express": "^4.15.2",
+    "pug": "^2.0.0-rc.2",
     "multer": "^1.2.0"
   },
   "devDependencies": {
-    "morgan": "^1.7.0"
+    "eslint": "^4.3.0",
+    "eslint-config-airbnb-base": "^11.3.1",
+    "eslint-plugin-import": "^2.7.0",
+    "morgan": "^1.8.2"
   }
 }
