@@ -1,3 +1,5 @@
+'use strict';
+
 const express = require('express');
 const app = express();
 const path = require('path');
@@ -24,8 +26,7 @@ app.post('/getData', upload.single('file'), (req, res) => {
       filesize: req.file.size,
       mimetype: req.file.mimetype
     });
-  }
-  else {
+  } else {
     res.json({error: true, message: 'No file provided'});
   }
 });
